@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+      <title>Nicholas' Portfolio Page</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Portfolio page of an aspiring full-stack developer">
+      <meta name="author" content="Nicholas Galarza">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CDN for Bootstrap (2) -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Custom Links -->
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Bad+Script|Julius+Sans+One" rel="stylesheet">
+   </head>
+
+   <body>
+      <!-- Navigation Bar For Header -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container-fluid">
+            <!-- My logo & Collaspe Button --> 
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar"> 
+                  <span class="icon-bar"></span> 
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand">Nicholas Galarza</a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse text-center" id="myNavBar">
+               <ul class="nav navbar-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Start selling yourself -->
+      <div id="page">
+         <div class="home">
+            <img class="center-block" src="images/wtc.jpg" alt="world trade center">
+            <h1><strong>Nicholas Galarza</strong></br><strong>Aspiring Full-Stack Web Developer</strong></h1>
+            <h2><strong>&#x2965;</strong></h2>
+         </div>
+         <div id="about_container">
+            <div class="welcome">
+               <h1>Welcome<br>to my<br>Webpage!</h1>
+            </div>
+            <div class="welcome_content">
+               <h2>About Me</h2>
+               <hr>
+               <p>I have recently earned my bachelors degree in Computer Science and now I'm self learning web development. I enjoy the creativity that comes from the front-end aspect of web development and I enjoy problem solving. Therefore, I want to continue programming for the rest of my life. Thank you for stopping by! And feel free to shoot me an email if you would like to get in contact!  </p>
+               <hr>
+               <div id="skill">
+                  <p><u>Skills:</u> C++, Java, Linux, html, css, Bootstrap, JavaScript</p>
+                  <p><u>Tools:</u> Vim, Sublime, Android Studio, Eclipse </p>
+               </div>
+            </div>
+         </div>
+         <div id="p_separator">
+            <h1><strong>My Portfolio</strong></h1> 
+         </div>
+         <div id="projects">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Tribute Page</h3>
+                        </div>
+                        <div class="panel-body">
+                           <a href="http://codepen.io/pingwinZloty/pen/qRBxQE" target="_blank" class="thumbnail">
+                              <img class="img-responsive" src="images/tributeScreenShot.png"  alt="linus torvalds">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Random Quote Machine</h3>
+                        </div>
+                        <div class="panel-body">
+                           <a href="#" target="_blank" class="thumbnail">
+                              <img class="img-responsive" src="images/hexagon.jpg" alt="placeholder">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                           <a href="#" target="_blank" class="thumbnail">
+                              <img src="images/hexagon.jpg" alt="placeholder">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                           <a href="#" target="_blank" class="thumbnail">
+                              <img src="images/hexagon.jpg" alt="placeholder">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="contact">
+            <h1>Contact</h1>
+            <div class="contact_details">
+               <ul>
+                  <li>Name: <div id="answers">Nicholas Galarza</div></li>
+                  <li>Email: <div id="answers">example_At_gmail_DOT_com</div></li>
+               </ul>
+            </div>
+            <div id="social_media">
+               <ul>
+                  <a href="https://www.freecodecamp.com/pingwinzloty" target="_blank" ><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+                  <a href="https://github.com/PingwinZloty" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/nicholas-galarza" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+               </ul>
+            </div>
+         </div>
+         <h2>
+      </div>
+      </div>
+      <!-- JavaScript & Jquery plugins -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://use.fontawesome.com/2d08107feb.js"></script>
+   </body>
+</html>

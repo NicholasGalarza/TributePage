@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Julius+Sans+One');
+
+#page {
+   font-size: 18px; 
+   font-family: Georgia, Verdana, Helvetica, Sans-Serif; 
+   margin-left: 0; margin-right: 0;
+}
+
+.home {
+   background-color: #687A8F; /* Color to overlay with home */ 
+   position: relative;
+   margin-top: 51px;
+   color: snow;
+}
+
+.home img {
+   width: 100%;
+   opacity: 0.63;
+}
+
+/* Horizontally & Verically Align Text Across Image */
+.home h1 {
+   font-family: 'Julius Sans One', sans-serif;
+   font-size: 155%;
+   float: left;
+   position: absolute;
+   text-align: center;
+   margin: auto;
+   left: 0; right: 0;
+   top: 0;  bottom: 50%;
+   height: 50px; /* Fit h1 elements inside this block */
+}
+
+.home h2 {
+   font-size: 250%;
+   text-align: center;
+   float: left;
+   position: absolute;
+   margin: auto;
+   top: 60%; bottom: 0;
+   left: 0; right: 0;
+   height: 50px; /* Fit h2 elements inside this block */
+}
+
+/* This is going to be my about section. It will contain a banner
+ * and it will also contain my content. */
+#about_container{
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   position: relative;
+}
+
+/* No idea why this works, but adding that little bit of padding
+ * somehow makes the this subcontainer fill the top of where the 
+ * margin is currently located.
+ */ 
+#about_container .welcome {
+   background-color: #F1EDEA;
+   float: left;
+   width: 100%;
+   padding: 10px; 
+   position: relative;
+   clear: left;
+}
+
+#about_container .welcome_content {
+   background-color: #393D40;
+   color: #F1EDEA;
+   clear: left;
+   padding: 20px;
+}
+/* This is not vertically centered */
+#about_container .welcome h1 {
+   border: 3px solid #393D40;
+   border-radius: 10px;
+   color: #393D40;
+   font-family: 'Julius Sans One', sans-serif; 
+   font-size: 250%;
+   padding: 15px;
+   margin-left: 50px; 
+   margin-right: 50px; 
+   text-align: center;
+}
+
+#about_container .welcome_content h2 {
+   text-align: center;
+   font-family: 'Julius Sans One', sans-serif; 
+}
+
+#about_container .welcome_content p {
+   font-family: 'Bad Script', cursive; 
+   font-size: 160%;
+}
+
+#about_container .welcome_content #skill p {
+   font-family: 'Julius Sans One', sans-serif; 
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+@media(min-width: 900px){
+   #about_container{
+      display: flex;
+   }
+
+   #about_container .welcome { 
+      float: left;
+      position: relative;
+      margin: 0;
+      width: 50%;
+   }
+
+   #about_container .welcome_content {
+      float: right; 
+      width: 50%;
+   }
+   
+   #about_container .welcome h1 {
+      position: absolute; 
+      top: 50%;
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      margin: 0;
+   }
+}
+
+
+#p_separator {
+   background: #636363; 
+   clear: both;
+   text-align: center;
+   padding: 30px 0;
+   position: relative;
+   margin: 0;
+   opacity: 0.63;
+}
+
+#p_separator h1 {
+   color: snow; 
+   font-family: 'Julius Sans One', sans-serif;
+   float: left;
+   position: absolute;
+   text-align: center;
+   margin: auto;
+   left: 0; right: 0;
+   top: 30%;  bottom: 0;
+   height: 50px;
+}
+
+#projects{
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+
+.panel {
+   margin-top: 30px;
+   text-align: center;
+}
+/* Override bootstraps natural 15px padding for body */
+.panel-body {
+   padding: 0;
+}
+
+/* Used for adding style about what things were used to create the certain project. 
+ * This issue with this feature is that the padding overlaps with each other upon 
+ * shrinking the screen.  
+ */
+.panel-body ul > li {
+   border: 1px solid black;
+   border-radius: 15px;
+   background-color: #421C52; /* grape */
+   color: snow;
+   display: inline;
+   font-weight: bold;
+   padding: 8px;
+   opacity: 0.82;
+   list-style: none;
+}
+
+
+#contact {
+   background-color: #393D40;
+   border-radius: 0 0 30px 30px;
+   color: #F1EDEA;
+   position: relative; 
+   padding: 10px;
+   top: -20px;
+}
+
+#contact h1 {
+   color: #F1EDEA;
+   text-align: center;
+}
+
+.contact_details {
+   border: 3px solid #F1EDEA;
+   border-radius: 10px;
+   color: #F1EDEA;
+   padding: 15px;
+   margin: 40px;
+}
+
+.contact_details {
+   text-align: center;
+}
+
+.contact_details ul {
+   list-style: none;
+}
+
+#answers {
+   color: #E30B5C;
+   display: inline;
+}
+
+#social_media ul > a {
+   color: inherit;
+   display: inline-block;
+   width: 32%;
+   text-align: center;
+   padding: 10px;
+   overflow: hidden;
+}
+
+@media(min-width: 900px){
+
+   #contact {
+
+   }
+}
+
+/* Important Colors: 
+ * #687A8F        blueberry
+ * #F7882F        apricot
+ * #F7C331        citrus
+ * #DCC7AA        apple core
+ * #E30B5C        raspberry
+ * #393D40        slate
+ * #F1EDEA        almond
+ */
+
+
